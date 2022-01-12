@@ -11,7 +11,7 @@ class User:
         email = string[1]
         password = string[2]
         
-        cls(name, email, password)
+        return cls(name, email, password)
         
     @classmethod
     def from_list(cls, list_params):
@@ -19,7 +19,7 @@ class User:
         email = list_params[1]
         password = list_params[2]
         
-        cls(name, email, password)
+        return cls(name, email, password)
 
 # 유저 생성 및 초기값 설정
 younghoon = User.from_string("강영훈,younghoon@codeit.kr,123456")
